@@ -1,7 +1,7 @@
 class Ninja:
-    def __init__(self, name, hp = 100, strength = 10):
+    def __init__(self, name, health = 100, strength = 10):
         self.name = name
-        self.health = hp
+        self.health = health
         self.strength = strength
 
     def check_stats(self):
