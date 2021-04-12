@@ -4,7 +4,7 @@ class Ninja:
         self.health = hp
         self.strength = strength
 
-    def check_health(self):
+    def check_stats(self):
         print(self.name, self.health, self.strength)
         return self
     
@@ -16,10 +16,11 @@ class Ninja:
 
 
 
-Leo = Ninja("Leo", 20)
-Raph = Ninja("Raph")
+# Leo = Ninja("Leo", 20)
+# Raph = Ninja("Raph")
 
-Leo.attack(Raph).check_health()
+# Leo.attack(Raph).check_health()
 # Leo.check_health()
 # Raph.check_health()
+
 
