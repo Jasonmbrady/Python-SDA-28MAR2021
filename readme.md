@@ -1,0 +1,1 @@
+why .gitgnore is important: See the py3env folder. That shouldn't be here. learn from my mistakes :-)
