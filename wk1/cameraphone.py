@@ -22,7 +22,7 @@ class Phone:
         self.camera.take_picture()
     
     def download_app(self, app):
-        self.storage.push(app)
+        self.storage.append(app)
 
 
 
