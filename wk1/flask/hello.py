@@ -16,6 +16,10 @@ def success():
 def sayhi(name):
     return "Hello, " + name
 
+# Default Route
+@app.route('/<any>')
+def default(any):
+    return f"{any} is not a valid route!"
 
 if __name__=="__main__":
     app.run(debug=True)
