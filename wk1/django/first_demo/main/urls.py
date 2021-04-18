@@ -9,5 +9,4 @@ urlpatterns = [
     # path('bears/<str:name>/poke', views.yet_another),
     path('bears/<int:id>/<str:color>', views.one_more),
     path('form', views.form_handler),
-    path('bears', views.form_handler),
 ]

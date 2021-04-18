@@ -15,5 +15,5 @@ def one_method(request):
 
 def form_handler(request):
     if request.method == "POST":
-        words = request.POST["stuff"]
+        words[0] = request.POST["stuff"]
     return redirect("/")
