@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rules</title>
+</head>
+<body>
+    <h2>What would you like your goal to be?</h2>
+    <form action="/set_rules" method="POST">
+        {% csrf_token %}
+        <div>
+            <label for="moves">Number of Moves</label>
+            <input type="number" name="moves">
+        </div>
+        <div>
+            <label for="goal">Total Gold Goal</label>
+            <input type="number" name="goal">
+        </div>
+        <button>submit</button>
+</body>
+</html>
