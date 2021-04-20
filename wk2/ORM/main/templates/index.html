@@ -5,8 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ORM</title>
+    <!-- my_book -->
 </head>
 <body>
     <h1>Hello, Django!</h1>
+    <ul>
+
+            <li>{{my_book.title}}, by {{my_book.author.first_name}} {{my_book.author.last_name}}</li>
+    </ul>
+    <form action="/add_author" method="post">
+        {% csrf_token %}
+        <div>
+            <label>First Name:</label>
+            <input type="text" name="fname">
+        </div>
+        <div>
+            <label>Last Name:</label>
+            <input type="text" name="lname">
+        </div>
+        <button>submit</button>
+    </form>
 </body>
 </html>
